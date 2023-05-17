@@ -7,6 +7,7 @@ import Cart from "./components/Cart";
 
 function App() {
   return (
+    
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/product/:id" element={<Product />} />

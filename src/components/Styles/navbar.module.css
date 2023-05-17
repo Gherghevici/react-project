@@ -1,0 +1,29 @@
+:root{
+    --primary:#f5f5f5;
+    --bgColor: #1e1e22;
+    --primary-button:#73f190;
+    --secondary-button:#17181b;
+    --Accent:#3b974e;
+    --hoverTextColor: #a29f9f;
+}
+
+.navContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5vh;
+    color: var(--primary);
+    background-color: var(--secondary-button) ;
+}
+.navContainer >:nth-child(2){
+    display: flex;
+    gap: 1vw;
+}
+.navContainer >:nth-child(2)>div:is(:active,:hover){
+    color: var(--hoverTextColor);
+    cursor: pointer;
+}
+.navContainer >:nth-child(2)>div::first-letter{
+    text-transform: uppercase;
+}
